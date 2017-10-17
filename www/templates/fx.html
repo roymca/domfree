@@ -1,0 +1,85 @@
+<ion-side-menus enable-menu-with-back-views="true">
+	
+	<ion-side-menu-content >
+		
+				<ion-nav-view>
+				
+				
+					<div class="bar bar-header" style="background:red; font-weight:bold">
+						<div class="col col-10"><button menu-toggle="left" class="button button-icon ion-navicon" style="font-size:32px; color:white"></button></div>
+						<div class="col col-80" style="text-align:center; font-size:18px; color:white">
+							FX-9
+						</div>
+						<div class="col col-10"></div>
+					</div>
+				
+				
+					<ion-content class="padding has-header" style="background:url(img/bck.png); background-size: cover;">
+						
+					
+						<div class = "row" style="width:100%">
+							<img src="img/img3.jpg" style="width:100%; height:200px; border-radius: 15px 50px; padding:0px">
+						</div>
+						
+						<div style="padding:20px;color:white;font-family:Trebuchet MS;font-size:18px">
+						<p>FX-9</p>
+						<p>Exclusively Distributed By<br/>WWW.CLASSICFIREARMS.COM</p>
+						<p style="color:white">MSRP:$799.99</p>
+						<p>The FX-9 carbine (Freedom Xtreme-9mm Carbine) has a familier set of operating controls
+						for the avid AR-15 user, it accepts AR-15 stocks and buffer tube assemblies, as well as
+						most free float AR-15 rail assemblies.</p>
+						<p>The FX-9 uses standard double stack Glock style 9mm magazines and comes standard with
+						a 33 rd double stack mag. When we designed the FX-9 our goals were Reliability, Affordability, 
+						and familier controls for the user.</p>
+						<p>The FX-9 is machined From Billet material, Anodized type lll aluminum components and Full 
+						hard nitride Steel components including the barrel,bolt,ejector,last round hold open, feed ramp
+						 and extractor for extended wear properties and corrosion resistence.</p>
+						<p>The upper and lower reciever are more than 1.00 shorter than a standard AR-15 upper and lower
+						reciever making it more compact and lighter than a standard mil-spec AR-15 design.</p>
+						</div>
+						
+					</ion-content>
+				
+				</ion-nav-view>
+		</ion-side-menu-content>
+
+ <ion-side-menu side="left">
+	
+		<ion-content style="background: url(img/bck.png) center; background-size: cover;">
+
+		<div class = "row">
+		<div class="col col-center text-center"><img src="img/menulogo.png" height="250px" width="250px"></div>
+		</div>
+
+		<ion-list ng-controller="sideCtrl" style="background: url(img/side1.jpg) center; background-size: cover; background:transparent">
+			<ion-item menu-toggle style="background:transparent;color:white" ng-click="hm()">
+			HOME
+			</ion-item>
+			<ion-item menu-toggle style=" background:transparent;color:white" ng-click="fx()">
+			FX-9
+			</ion-item>
+			<ion-item menu-toggle style=" background:transparent;color:white" ng-click="faq()">
+			FAQ
+			</ion-item>
+			<ion-item menu-toggle style="background:transparent;color:white" ng-click="dealers()">
+			DEALERS
+			</ion-item>
+			<ion-item menu-toggle style="background:transparent;color:white" ng-click="contact()">
+			CONTACT US
+			</ion-item>
+			<ion-item menu-toggle style="background:transparent;color:white" ng-click="mission()">
+			MISSION STATEMENT
+			</ion-item>
+			<ion-item menu-toggle style="background:transparent;color:white" ng-click="terms()">
+			TERMS OF SERVICE
+			</ion-item>
+			<ion-item menu-toggle style="background:transparent;color:white" ng-click="fm()">
+			FM-9 MANUAL
+			</ion-item>
+			<ion-item menu-toggle style="background:transparent;color:white" ng-click="logout()">
+			LOGOUT
+			</ion-item>
+		</ion-list>
+		</ion-content>
+	</ion-side-menu>
+</ion-side-menus>

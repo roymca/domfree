@@ -1,0 +1,46 @@
+<ion-side-menus enable-menu-with-back-views="true">
+	
+	<ion-side-menu-content>
+		
+		<ion-nav-view >
+			<div class="bar bar-header" style="background:red;font-weight:bold;overflow: hidden;line-height: 100%;">
+				<div class="col col-10"><i class="ion-chevron-left" ng-click="back()" style="color:white;font-weight:bold;font-size:20px"></i></div>
+				<div class="col col-80" style="text-align:center; font-size:16px; color:white">
+					{{specificdata.product_title}}
+				</div>
+				<div class="col col-10" style="padding-right:10px"><button class="button button-icon ion-ios-cart" style="color:white"  ng-click="gocart()" ></button></div>	
+			</div>
+			
+				
+			<ion-content class="padding has-header" style="background:url(img/bck.png) center; background-size: cover;">
+			<div class="spacer" style="height:40px"></div>
+				<div class="row" style="width:100%">
+					<img style="width:100%;height:240px;border-radius:15px" ng-src="{{specificdata.Product_image}}"/>
+				</div>
+				<div class="spacer" style="height:16px"></div>
+				<p style="font-style:italic;text-align:center;color:white">Weapons</p>
+				<p style="font-style:italic;font-weight:bold;text-align:center;color:red;font-size:16px">{{specificdata.product_title}}</p>
+				<div class="spacer" style="height:26px"></div>
+				<p style="font-size:25px;font-style:italic;font-weight:bold;text-align:center;color:white">${{specificdata.product_price}}</p>
+				<div class="spacer" style="height:15px"></div>
+				
+				<div class="row" style="font-weight:bold; font-size:14px">
+					<div class="col col-33" style="text-align:right;font-weight:bold"><button class="w3-button w3-circle w3-red" ng-click="increaseItemCount(specificdata)">+</button></div>
+					<div class="col col-33" style="text-align:center;font-weight:bold;font-size:20px;color:white">{{specificdata.quantity}}</div>
+					<div class="col col-33" style="text-align:left;font-weight:bold"><button class="w3-button w3-circle w3-red" ng-click="decreaseItemCount(specificdata)">-</button></div>
+				</div>
+				<div class="spacer" style="height:15px"></div>
+				<div class="row">
+					<div class="col col-50" style="text-align:right">
+						<button class="w3-button w3-gray w3-round-xxlarge" ng-click="details()"><b>&nbsp&nbsp&nbsp&nbspDETAILS&nbsp&nbsp&nbsp&nbsp</b></button>
+					</div>&nbsp&nbsp&nbsp
+					<div class="col col-50">
+						<button class="w3-button w3-red w3-round-xxlarge" ng-click="addtocart(specificdata)"><b>ADD TO CART</b></button>
+					</div>
+				</div>
+			</ion-content>
+				
+		</ion-nav-view>
+	</ion-side-menu-content>
+	
+</ion-side-menus>

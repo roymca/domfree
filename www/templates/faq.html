@@ -1,0 +1,85 @@
+<ion-side-menus enable-menu-with-back-views="true">
+	
+	<ion-side-menu-content >
+		
+				<ion-nav-view>
+				
+					<div class="bar bar-header" style="background:red; font-weight:bold;">
+				<div class="col col-10"><button menu-toggle="left" class="button button-icon ion-navicon" style="color:white"></button></div>
+				<div class="col col-80" style="text-align:center; font-size:18px; color:white">
+					FAQ
+				</div>
+				<!--<div class="col col-10" style="padding-right:10px"><button class="button button-icon ion-ios-cart" style="color:white" ng-click="gocart()"></button></div>
+				-->
+			</div>
+				
+					<ion-content class="padding has-header" style="background:url(img/bck.png); background-size: cover;">					
+						
+						<div style="padding:20px;color:white;font-family:Trebuchet MS;font-size:18px">
+						<p style="font-weight:bold;font-size:18px;color:#fcedd6">1. Does it work with a bumpstock or binary trigger?</p>
+						<p>We have not tested any aftermarket device in house so the short answer is, you
+						will have to try and see. That being said we have customer feedback saying some devices work
+						and the best thing to do is search youtube or forums like ar15.com, uzitalk.com and other related 
+						sites for other customers who have tried. The main thing to understand with aftermarket parts
+						are the geometry of the hammer if it is fire control related or buffer tube clearance if it is a 
+						stock type product. Another thing to consider if inertia is part of the equating is out belt fed 
+						is not light. The weight of our belt fed make the recoil similar to a .22LR but with that means
+						the ability to "bump" will take some practice.</p>
+						<p style="font-weight:bold;font-size:18px;color:#fcedd6">2. I am having issues with feeding what can I do to resolve this issue?</p>
+						<p>Please watch the following video as well as consult the manual. If after you have read the 
+						manual completely and watched the videos below reach out to us for more assistance.</p>
+						<p style="font-weight:bold;font-size:18px;color:#fcedd6">3. What is the difference between the Gen 1 & Gen 2 top cover and feed tray?</p>
+						<p>The FM-9 9mm belt fed upper from Freedom Ordnance is a blowback system. As such the inertia 
+						from the bolt being thrown back by the power of the ammunition is what causes the arm to cam and advance the belt.
+						 From our launch in September 2015 until the summer of 2016 the original Gen 1 unit would not hand cycle and would
+						 not consistently feed the last round of the belt. This was due to the stroke length of the cam arm. When we finally 
+						 caught up on production, and based on customer feedback on the desire to hand cycle the upper, we were able to design
+						 a cam arm with a longer stroke which also required changes to the location of the levers in the feed tray which prevent
+						 the belt from slipping back out of the upper. Now the unit is able to be cycled by hand and although we do not.</p>
+						</div>
+						
+					</ion-content>
+				
+				</ion-nav-view>
+		</ion-side-menu-content>
+
+  <ion-side-menu side="left">
+	
+		<ion-content style="background: url(img/bck.png) center; background-size: cover;">
+
+		<div class = "row">
+                    <div class="col col-center text-center"><img src="img/menulogo.png" height="250px" width="250px"></div>
+		</div>
+
+		<ion-list ng-controller="sideCtrl" style="background: url(img/side1.jpg) center; background-size: cover; background:transparent">
+			<ion-item menu-toggle style="background:transparent;color:white" ng-click="hm()">
+			HOME
+			</ion-item>
+			<ion-item menu-toggle style=" background:transparent;color:white" ng-click="fx()">
+			FX-9
+			</ion-item>
+			<ion-item menu-toggle style=" background:transparent;color:white" ng-click="faq()">
+			FAQ
+			</ion-item>
+			<ion-item menu-toggle style="background:transparent;color:white" ng-click="dealers()">
+			DEALERS
+			</ion-item>
+			<ion-item menu-toggle style="background:transparent;color:white" ng-click="contact()">
+			CONTACT US
+			</ion-item>
+			<ion-item menu-toggle style="background:transparent;color:white" ng-click="mission()">
+			MISSION STATEMENT
+			</ion-item>
+			<ion-item menu-toggle style="background:transparent;color:white" ng-click="terms()">
+			TERMS OF SERVICE
+			</ion-item>
+			<ion-item menu-toggle style="background:transparent;color:white" ng-click="fm()">
+			FM-9 MANUAL
+			</ion-item>
+			<ion-item menu-toggle style="background:transparent;color:white" ng-click="logout()">
+			LOGOUT
+			</ion-item>
+		</ion-list>
+		</ion-content>
+	</ion-side-menu>
+</ion-side-menus>

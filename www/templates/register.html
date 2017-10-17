@@ -1,0 +1,32 @@
+<ion-view style="background: url(img/registerBG.png) center; background-size: cover;">
+
+  
+  <ion-content class="w3-container">
+	
+	<div class="spacer" style="height:250px"></div>
+	<div class = "row">
+		<div class="col col-center text-center" style="color:white;font-family:Lucida Sans Unicode;font-size:20px">
+		<img src="img/star.png"height ="20px" width="20px">&nbsp&nbspREGISTER&nbsp&nbsp<img src="img/star.png"height ="20px" width="20px"></div>
+	</div>
+	
+	<div class="spacer" style="height:15px"></div>
+  
+    <form >
+        <input type="email" placeholder="Email" ng-model="user.email" required style="border-radius: 23px;border-color:white;color:white">
+		<div class="spacer" style="height:5px"></div>
+        <input type="password" placeholder="Password" ng-model="user.password" required style="border-radius: 23px;border-color:white;color:white">
+		<div class="spacer" style="height:5px"></div>
+		<input type="password" placeholder="Re-Type Password" ng-model="user.repassword" required style="border-radius: 23px;border-color:white;color:white">
+    
+		<div class="spacer" style="height:15px"></div>
+	
+      <button class="button button-block button-assertive" style="border-radius: 23px" ng-click="register(user)">
+        REGISTER
+      </button>
+    </form>
+	
+	<div class="spacer" style="height:20px"></div>
+	<p style="text-align:center;color:white">Have an account?<button class="button-clear" style="color:red" ng-click="log()">Login</button></p>
+	
+  </ion-content>
+</ion-view>

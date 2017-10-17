@@ -1,0 +1,84 @@
+<ion-side-menus enable-menu-with-back-views="true">
+	
+	<ion-side-menu-content >
+		
+				<ion-nav-view>
+				
+					<div class="bar bar-header" style="background:red; font-weight:bold">
+						<div class="col col-10"><button menu-toggle="left" class="button button-icon ion-navicon" style="font-size:32px; color:white"></button></div>
+						<div class="col col-80" style="text-align:center; font-size:18px; color:white">
+							CONTACT INFO
+						</div>
+						<div class="col col-10"></div>
+					</div>
+				
+					<ion-content class="padding has-header" style="background: url(img/bck.png) center; background-size: cover;">
+												
+						<div id="map"></div>
+						
+						<div>
+						
+							<div class="spacer" style="height:5px"></div>
+							<div class="w3-row w3-section">
+							  <div class="w3-col" style="width:50px;color:#d1f4ba"><i class="w3-xxlarge fa fa-user"></i></div>
+							  <div class="w3-col" style="width:auto;font-size:14px;font-weight:bold"><font color="#ffffff">ADDRESS</font><br/><font color="#fcedd6">612 Grace Way Chandler, IN 47610</font><hr/></div>
+							</div>
+							
+							<div class="w3-row w3-section">
+							  <div class="w3-col" style="width:50px;color:#d1f4ba"><i class="w3-xxlarge fa fa-phone"></i></div>
+							  <div class="w3-col" style="width:auto;font-size:14px;font-weight:bold"><font color="#ffffff">PHONE</font><br/><font color="#fcedd6">812-297-5141</font>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<hr></hr></div>
+							</div>
+							
+							<div class="w3-row w3-section">
+							  <div class="w3-col" style="width:50px;color:#d1f4ba"><i class="w3-xxlarge fa fa-send"></i></div>
+							  <div class="w3-col" style="width:auto;font-size:14px;font-weight:bold"><font color="#ffffff">EMAIL</font><br/><font color="#fcedd6">michele@freedomordnance.com</font>&nbsp&nbsp&nbsp&nbsp&nbsp<hr></hr></div>
+							</div>
+						</div>
+						
+						
+					</ion-content>
+				
+				</ion-nav-view>
+				
+		</ion-side-menu-content>
+
+  <ion-side-menu side="left">
+	
+		<ion-content style="background: url(img/bck.png) center; background-size: cover;">
+
+		<div class = "row">
+                    <div class="col col-center text-center"><img src="img/menulogo.png" height="250px" width="250px"></div>
+		</div>
+
+		<ion-list ng-controller="sideCtrl" style="background: url(img/side1.jpg) center; background-size: cover; background:transparent">
+			<ion-item menu-toggle style="background:transparent;color:white" ng-click="hm()">
+			HOME
+			</ion-item>
+			<ion-item menu-toggle style=" background:transparent;color:white" ng-click="fx()">
+			FX-9
+			</ion-item>
+			<ion-item menu-toggle style=" background:transparent;color:white" ng-click="faq()">
+			FAQ
+			</ion-item>
+			<ion-item menu-toggle style="background:transparent;color:white" ng-click="dealers()">
+			DEALERS
+			</ion-item>
+			<ion-item menu-toggle style="background:transparent;color:white" ng-click="contact()">
+			CONTACT US
+			</ion-item>
+			<ion-item menu-toggle style="background:transparent;color:white" ng-click="mission()">
+			MISSION STATEMENT
+			</ion-item>
+			<ion-item menu-toggle style="background:transparent;color:white" ng-click="terms()">
+			TERMS OF SERVICE
+			</ion-item>
+			<ion-item menu-toggle style="background:transparent;color:white" ng-click="fm()">
+			FM-9 MANUAL
+			</ion-item>
+			<ion-item menu-toggle style="background:transparent;color:white" ng-click="logout()">
+			LOGOUT
+			</ion-item>
+		</ion-list>
+		</ion-content>
+	</ion-side-menu>
+</ion-side-menus>

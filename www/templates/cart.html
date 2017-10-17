@@ -1,0 +1,70 @@
+	<ion-nav-view title="My Cart">
+		<div class="bar bar-header hbar">
+                    <div class="col col-10"><i class="ion-chevron-left headicon" ng-click="back()"></i></div> 
+                    <div class="col col-90 hcol">My Cart</div>	
+		</div>
+			
+				
+		<ion-content class="padding has-header" style="background: url(img/bck.png);background-size:cover;">
+			<div class="card supcard" ng-repeat="item in cartitems">
+				<div ng-show="cartitems.length > 0" class="item item-thumbnail-left supcarditem row">
+					<div class="col col-50 supcol">
+						<img ng-src="{{item.product_thumb}}" height="130px" width="130px" style="padding-top:40px;padding-left:5px">
+						<!--<img src="img/img1.jpg" height="130px" width="130px" style="padding-top:40px;padding-left:5px">-->
+					</div>
+					<div class="col col-50px ">
+						<div class="card subcard">
+								<div class="row">
+									<div class="col col-100 subcol">
+										<span class="subpan">
+										{{item.post_title}}
+										</span>	
+									</div>
+								</div>
+								<div class="row">
+									<div class="col col-100" style="text-align:center">
+										<div class="item-row" style="font-weight:bold; font-size:14px">
+										$ &nbsp {{item.price}}
+										</div>
+										<div class="row cart-edit-row" style="font-weight:bold; font-size:14px">
+											<div class="col col-33" style="text-align:right"><button class="button-edit-cart" ng-click="increaseItemCount(item)">+</button></div>
+											<div class="col col-33">
+											{{item.quantity}}
+											</div>
+											<div class="col col-33" style="text-align:left"><button class="button-edit-cart" ng-click="decreaseItemCount(item)">-</button></div>
+										</div>
+									</div>
+								</div>
+							<button ng-click="removefromcart(item)" class="button button-clear" style="float:right"><i class="icon ion-trash-a" style="color:white"></i></button>	
+						</div>
+					</div>
+				</div>			  
+				
+			</div>
+			
+			<div ng-show="cartitems.length < 0" style="text-align:center">
+					<h1 style="padding-top:50%;padding-bottom:10px;color:white; font-family:Comic Sans MS">{{item.message}}</h1>
+					<button ng-click="goshop()" class="button button-assertive">Shop Now</button> 
+			</div>
+			
+			
+			<div class="panel" ng-show="cartitems.length >0">
+				<div class="panel-body cart-summary">
+					<h3 style="color:white">Order Summary</h3>
+					<div class="row" >
+						<div class="col col-67"><h4 style="color:white">Total Amount :</h4></div>
+						<div class="col col-33"><h4 style="color:white">₹&nbsp&nbsp{{total}}</h4></div>
+					</div>
+					<button class="button button-assertive button-block button-custom margin-button" nav-direction="forward" ng-click="cartCheckout()"> Checkout </button>
+				</div>
+			</div>
+                    
+			
+			<!--<img src="img/cartproductbg.png" height="200px" width="390px">-->
+		</ion-content>
+				
+	</ion-nav-view>
+	
+
+
+

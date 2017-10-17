@@ -1,0 +1,29 @@
+<ion-side-menus enable-menu-with-back-views="true">
+	
+	<ion-side-menu-content>
+		
+		<ion-nav-view ng-repeat="x in clickdata">
+			<div class="bar bar-header" style="background:red;font-weight:bold;line-height:100%;">
+			<div class="col col-10"><i class="ion-chevron-left" ng-click="backpg7()" style="color:white;font-weight:bold;font-size:20px;"></i></div>
+				<div class="col col-90" style="text-align:center; font-size:16px; color:white">
+					{{specificdata.product_title}}
+				</div>
+			</div>
+			
+				
+			<ion-content class="padding has-header" style="background:url(img/bck.png);background-size:cover;">
+			<div class="row">
+				<div class="w3-card-4" style="width:100%;background:white;border-radius:20px;padding:5px;">
+					<div class="w3-container" style="text-align:justify;font-size:16px">
+						{{specificdata.product_description}}
+					</div>
+				</div>
+			</div>
+			</ion-content>
+				
+		</ion-nav-view>
+	</ion-side-menu-content>
+
+
+	
+</ion-side-menus>

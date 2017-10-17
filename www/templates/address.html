@@ -1,0 +1,83 @@
+<ion-side-menus enable-menu-with-back-views="true" >
+	<ion-side-menu-content>
+		<ion-nav-view>
+                    <div>
+			<div class="bar bar-header" style="background:red;font-weight:bold;">
+				<div class="col col-10"><i class="ion-chevron-left" ng-click="back()" style="color:white;font-weight:bold;font-size:20px"></i></div>
+				<div class="col col-80" style="text-align:center; font-size:16px; color:white">
+					ADDRESS
+				</div>
+			</div>
+                    </div>
+					
+                    <ion-content class="padding has-header" id="content">
+                         <p class="shipping"> Shipping address:</p>
+                          <div class="card" style="background:url(img/bck.png)center; background-size: cover;">
+                                <input type="text" placeholder="first_name" ng-model="sa.fname" required ng-change="sameAddress && update()" style="border-radius: 23px;border-color:white;color:white">
+                                        <div class="spacer" style="height:5px"></div>
+                                <input type="text" placeholder="last_name" ng-model="sa.lname" required ng-change="sameAddress && update()"  style="border-radius: 23px;border-color:white;color:white">
+                                        <div class="spacer" style="height:5px"></div>
+                                <input type="text" placeholder="company" ng-model="sa.company"  ng-change="sameAddress && update()" style="border-radius: 23px;border-color:white;color:white">
+                                        <div class="spacer" style="height:15px"></div>
+                                <input type="text" placeholder="address_1" ng-model="sa.address1" required ng-change="sameAddress && update()"  style="border-radius: 23px;border-color:white;color:white">
+                                        <div class="spacer" style="height:15px"></div>
+                                <input type="text" placeholder="address_2" ng-model="sa.address2"  ng-change="sameAddress && update()"  style="border-radius: 23px;border-color:white;color:white">
+                                        <div class="spacer" style="height:15px"></div>
+                                <input type="text" placeholder="city" ng-model="sa.city" required ng-change="sameAddress && update()"  style="border-radius: 23px;border-color:white;color:white">
+                                        <div class="spacer" style="height:15px"></div>
+
+                                <input type="text" placeholder="state" ng-model="sa.state" required ng-change="sameAddress && update()"  style="border-radius: 23px;border-color:white;color:white">
+                                        <div class="spacer" style="height:15px"></div>       
+
+                                <input type="text" placeholder="postcode" ng-model="sa.postcode" required ng-change="sameAddress && update()"  style="border-radius: 23px;border-color:white;color:white">
+                                        <div class="spacer" style="height:15px"></div>
+
+                                <input type="text" placeholder="country" ng-model="sa.country" required ng-change="sameAddress && update()"  style="border-radius: 23px;border-color:white;color:white">
+                                        <div class="spacer" style="height:15px"></div>        
+
+                            </div>
+                                        
+                         
+                         <p class="shipping"> Billing address:</p>
+                         <input type="checkbox" ng-model="sameAddress" ng-change="sameAddress && update()" />
+                         <span style="color:white">Same as Shipping Address</span>
+
+                         <div class="card" style="background:url(img/bck.png)center; background-size: cover;">
+                                <input type="text" placeholder="first_name" ng-model="ba.fname" required ng-disabled="sameAddress" style="border-radius: 23px;border-color:white;color:white">
+                                        <div class="spacer" style="height:5px"></div>
+                                <input type="text" placeholder="last_name" ng-model="ba.lname" required ng-disabled="sameAddress" style="border-radius: 23px;border-color:white;color:white">
+                                        <div class="spacer" style="height:5px"></div>
+                                <input type="text" placeholder="company" ng-model="ba.company"  ng-disabled="sameAddress" style="border-radius: 23px;border-color:white;color:white">
+                                        <div class="spacer" style="height:15px"></div>
+                                <input type="text" placeholder="address_1" ng-model="ba.address1" required ng-disabled="sameAddress" style="border-radius: 23px;border-color:white;color:white">
+                                        <div class="spacer" style="height:15px"></div>
+                                <input type="text" placeholder="address_2" ng-model="ba.address2"  ng-disabled="sameAddress" style="border-radius: 23px;border-color:white;color:white">
+                                        <div class="spacer" style="height:15px"></div>
+                                <input type="text" placeholder="city" ng-model="ba.city" required ng-disabled="sameAddress" style="border-radius: 23px;border-color:white;color:white">
+                                        <div class="spacer" style="height:15px"></div>
+
+                                <input type="text" placeholder="state" ng-model="ba.state"  required ng-disabled="sameAddress" style="border-radius: 23px;border-color:white;color:white">
+                                        <div class="spacer" style="height:15px"></div>       
+
+                                <input type="text" placeholder="postcode" ng-model="ba.postcode" required ng-disabled="sameAddress" style="border-radius: 23px;border-color:white;color:white">
+                                        <div class="spacer" style="height:15px"></div>
+
+                                <input type="text" placeholder="country" ng-model="ba.country" required ng-disabled="sameAddress" style="border-radius: 23px;border-color:white;color:white">
+                                        <div class="spacer" style="height:15px"></div> 
+                                <input type="email" placeholder="email" ng-model="ba.email" required  style="border-radius: 23px;border-color:white;color:white">
+                                        <div class="spacer" style="height:15px"></div>
+
+                                <input type="text" placeholder="phone" ng-model="ba.phone" required style="border-radius: 23px;border-color:white;color:white">
+                                        <div class="spacer" style="height:15px"></div>     
+
+                            </div>
+                              <button class="button button-full button-assertive" style="border-radius: 23px" ng-click="submit(sa, ba)">
+                                SUBMIT
+                              </button>
+                        <div class="spacer" style="height:15px"></div>
+                        
+                     </ion-content>
+				
+                </ion-nav-view>
+	</ion-side-menu-content>  
+</ion-side-menus>
